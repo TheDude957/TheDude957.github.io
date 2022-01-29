@@ -2,8 +2,8 @@
 function get_map(){
 $.ajax({
     type: "POST",
-    url: 'refreshUsersList.php',
-   dataType: 'json',
+    url: 'map_info.php',
+    dataType: 'json',
     data: "check",
     success: function(response){
      
