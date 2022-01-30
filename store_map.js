@@ -39,6 +39,7 @@ function getAddress(xhr, email_or_ID){
 }
 
 function makeRequest(order_or_store,email_OR_ID, myfunction){
+  let thing = "";
     if(isNaN(email_OR_ID)){
       email_OR_ID = 'byEmail?email='+ email_OR_ID ;
       document.write('https://sapstore.conuhacks.io/orders/' + email_OR_ID)
@@ -69,7 +70,7 @@ function makeRequest(order_or_store,email_OR_ID, myfunction){
       console.log(xhr.responseText);
       var customer_address = JSON.parse(xhr.responseText);
 
-      var thing = myfunction(xhr,email_OR_ID);
+      thing = myfunction(xhr,email_OR_ID);
       return thing;
     };
 
@@ -79,6 +80,7 @@ function makeRequest(order_or_store,email_OR_ID, myfunction){
 
     xhr.send();
 }
+
 
 
 document.write(makeRequest("orders","246", getAddress));
