@@ -1,5 +1,6 @@
 
 function get_map(){
+  console.write("hello");
 $.ajax({
     type: "POST",
     url: 'map_info.php',
@@ -8,10 +9,7 @@ $.ajax({
     success: function(response){
      
       `worddsss`
-      
     }
 });
 }
-
-
 get_map();
