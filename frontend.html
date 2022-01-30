@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
-        <title> SAP Pickup Application </title>
+        <title> PicknGo </title>
         <meta charset = "utf-8"/>
         <meta name = "Title" content = "SAP Pickup Application">
         <meta name = "Authors" content = "...">
@@ -12,24 +12,56 @@
         -->
     </head>
 
+
     <body>
-        <h1> SAP ORDER PICKUP APPLICATION </h1>
-        <h3> Schedule Pickup </h3>
-        <form action = "" method = "post">
-            <p>
-            <label> Email Address <br />
-                <input type = "email" id = "userEmail" name = "userEmail"/>
-                <br/>
-            </label>
-            <label> Order number <br/>
-                <input type = "text" name = "orderNumber" size = "30"/>
-                <br/> <br/>
-            </label>
-            <label>
-                <input type  = "submit" value = "submit" />
-            </label>
-            </p>
-        </form>
+
+        <h1> PicknGo </h1>
+        <h3> Confirm Order Information </h3>
+        <!-- Asking for email and order number -->
+        <div>
+            <form action = "" method = "post">
+                <p>
+                <label> Email Address <br />
+                    <input type = "email" id = "userEmail" name = "userEmail"/>
+                    <br/>
+                </label>
+                <label> Order number <br/>
+                    <input type = "text" name = "orderNumber" size = "30"/>
+                    <br/> <br/>
+                </label>
+                <label> 
+                    <a href = "location_page.html">
+                        <input type  = "submit" value = "submit" />
+                    </a>
+                </label>
+                </p>
+            </form>
+        </div>
+
+        <div>
+            <h3> Location Selection </h3>
+            <h4> Choose a location to pick up your parcel</h4>
+        <!-- Create -->
+        
+            <table border = "">
+                <tr>
+                    <th> Store </th>
+                    <th> Availability </th>
+                    <th> Distance </th>
+                </tr>
+        <!-- Placeholder cells -->
+                <tr>
+                    <td> <a href = "store1"> Store 1 </a> </td>
+                    <td> Open </td>
+                    <td> 1 km </td>
+                </tr>
+                <tr>
+                    <td> <a href = "store2"> Store 1 </a> </td>
+                    <td> Open </td>
+                    <td> 2.5 km </td>
+                </tr>
+            </table>
+        </div>
         
 
     </body>
