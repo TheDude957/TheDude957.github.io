@@ -1,0 +1,13 @@
+body {
+    background-color: #DEF2D4;
+    text-align: center;
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    font-family: fantasy;
+    color: #B66A00;
+}
