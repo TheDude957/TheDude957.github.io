@@ -13,8 +13,6 @@ $.ajax({
 });
 }
 
-let url = "http://www.sapstore.conuhacks.io/orders";
-let params = (new URL(url)).searchParams;
 
 document.write(params);
 get_map();
