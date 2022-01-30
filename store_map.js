@@ -14,5 +14,4 @@ $.ajax({
 }
 
 
-document.write(params);
 get_map();
