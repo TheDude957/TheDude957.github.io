@@ -6,3 +6,8 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+.logo {
+    font-family: fantasy;
+    color: #B66A00;
+}
